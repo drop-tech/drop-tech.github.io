@@ -1,54 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Drop Philippines</title>
-    <style>
-      /* Add your custom styles here */
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-
-      .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        text-align: center;
-      }
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Startup Company</title>
+  <style>
+    /* Add your custom styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    
+    .logo {
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+    
+    .description {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+    
+    .contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .contact-form input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    
+    @media (max-width: 768px) {
       .logo {
-        margin-bottom: 20px;
+        max-width: 80%;
       }
-
+      
       .description {
-        font-size: 20px;
-        margin-bottom: 40px;
+        font-size: 16px;
       }
-
-      @media (max-width: 768px) {
-        .logo {
-          max-width: 80%;
-        }
-
-        .description {
-          font-size: 16px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <img src="logo.png" alt="Drop Philippines Logo" class="logo" />
-      <h1 class="description">
-        Stay tuned for updates and be prepared to elevate your laundry
-        experience to new heights!
-      </h1>
-      <!-- Add any additional content or sections here -->
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Drop Philippines Logo" class="logo" />
+    <h1 class="description">
+      Stay tuned for updates and be prepared to elevate your laundry
+      experience to new heights!
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="send_email.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <input type="submit" value="Send">
+      </form>
     </div>
-  </body>
+  </div>
+</body>
 </html>
