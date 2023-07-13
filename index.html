@@ -18,6 +18,8 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        min-height: 100vh;
+        padding-top: 20vh;
       }
 
       .logo {
@@ -33,16 +35,15 @@
         max-width: 300px;
       }
 
-      .contact-form label {
+      .label {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
       }
 
-      .contact-form input,
-      .contact-form textarea {
+      .input {
         width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
+        padding: 8px;
+        margin-bottom: 16px;
       }
 
       .submit {
@@ -50,7 +51,6 @@
         border-color: #326c79;
         cursor: pointer;
         max-width: 100%;
-        color: #fff;
       }
 
       @media (max-width: 768px) {
@@ -74,11 +74,11 @@
       <div class="contact-form">
         <h4>Contact Us</h4>
         <form action="send_email.php" method="POST">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+          <label class="label" for="name">Name:</label>
+          <input class="input" type="text" id="name" name="name" required />
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <input class="input" type="email" id="email" name="email" required />
 
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="5" required></textarea>
