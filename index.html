@@ -18,7 +18,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        min-height: 100vh;
+        min-height: 100%;
         padding-top: 20vh;
       }
 
@@ -29,43 +29,6 @@
       .description {
         font-size: 20px;
         margin-bottom: 40px;
-      }
-
-      .contact-form {
-        display: flex;
-        align-items: center;
-        max-width: 300px;
-      }
-
-      .contact-title {
-        font-size: 20px;
-        margin-bottom: 8px;
-      }
-
-      .contact-description {
-        font-size: 16px;
-        margin-bottom: 32px;
-      }
-
-      .label {
-        display: block;
-        margin-bottom: 8px;
-      }
-
-      .input {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 16px;
-        max-width: 100%;
-      }
-
-      .submit {
-        border-radius: 4px;
-        border-color: #326c79;
-        cursor: pointer;
-        width: 100%;
-        max-width: 100%;
-        padding: 16px;
       }
 
       @media (max-width: 768px) {
@@ -86,32 +49,6 @@
         Stay tuned for updates and be prepared to elevate your laundry
         experience to new heights!
       </h1>
-      <div class="contact-form">
-        <h1 class="contact-title">Contact Us</h1>
-        <h2 class="contact-description">
-          Connect with trusted laundry shops through our marketplace platform.
-          Contact us for inquiries and assistance. Experience the convenience
-          today!
-        </h2>
-        <form action="send_email.php" method="POST">
-          <label class="label" for="name">Name:</label>
-          <input class="input" type="text" id="name" name="name" required />
-
-          <label for="email">Email:</label>
-          <input class="input" type="email" id="email" name="email" required />
-
-          <label for="message">Message:</label>
-          <textarea
-            class="input"
-            id="message"
-            name="message"
-            rows="5"
-            required
-          ></textarea>
-
-          <input type="submit" class="submit" value="Send" />
-        </form>
-      </div>
     </div>
   </body>
 </html>

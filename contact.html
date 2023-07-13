@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drop Philippines - Contact Page</title>
+    <style>
+      /* Add your custom styles here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 100vh;
+        padding-top: 20vh;
+      }
+
+      .logo {
+        margin-bottom: 20px;
+      }
+
+      .description {
+        font-size: 20px;
+        margin-bottom: 40px;
+      }
+
+      .contact-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 40%;
+      }
+
+      .contact-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+
+      .contact-description {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 32px;
+        font-weight: 400;
+      }
+
+      .label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .input {
+        display: flex;
+        flex: 1;
+        width: 280px;
+        margin-bottom: 16px;
+        max-width: 300px;
+        padding: 4px;
+      }
+
+      .submit {
+        margin-top: 8px;
+        margin-bottom: 20vh;
+        border-radius: 4px;
+        background-color: #fff;
+        cursor: pointer;
+        width: 100%;
+        max-width: 100%;
+        padding: 16px;
+      }
+
+      @media (max-width: 768px) {
+        .logo {
+          max-width: 80%;
+        }
+
+        .description {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="logo.png" alt="Drop Philippines Logo" class="logo" />
+      <div class="contact-form">
+        <h1 class="contact-title">Contact Us</h1>
+        <h2 class="contact-description">
+          Connect with trusted laundry shops through our marketplace platform.
+          Contact us for inquiries and assistance. Experience the convenience
+          today!
+        </h2>
+        <form action="send_email.php" method="POST">
+          <label class="label" for="name">Name:</label>
+          <input class="input" type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input class="input" type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea
+            class="input"
+            id="message"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+
+          <input type="submit" class="submit" value="Send" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
