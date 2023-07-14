@@ -20,23 +20,21 @@
         text-align: center;
         min-height: 100vh;
         padding-top: 10vh;
+        margin-bottom: 20vh;
       }
 
       .logo {
         height: 80px;
         margin-bottom: 20px;
-      }
-
-      .description {
-        font-size: 20px;
-        margin-bottom: 40px;
+        max-width: 80%;
       }
 
       .contact-form {
         display: flex;
         align-items: center;
         flex-direction: column;
-        max-width: 40%;
+        max-width: 80%;
+        width: 100%;
       }
 
       .contact-title {
@@ -49,11 +47,12 @@
         font-size: 16px;
         margin-bottom: 32px;
         font-weight: 400;
+        width: 60%;
       }
 
       .google-form {
         display: flex;
-
+        justify-content: center;
         width: 100%;
       }
 
@@ -62,8 +61,20 @@
           max-width: 80%;
         }
 
+        .contact-description {
+          width: 100%;
+        }
+
+        .google-form {
+          width: 100%;
+        }
+
         .description {
           font-size: 16px;
+        }
+
+        .contact-form {
+          max-width: 100%;
         }
       }
     </style>
@@ -80,8 +91,8 @@
         <div class="google-form">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSeFCYe9xd5m-FS94eSOUPZMWPyyHp-nteLt-lWPI0te3N1Ang/viewform?embedded=true"
-            width="640"
-            height="719"
+            width="100%"
+            height="585"
             frameborder="0"
             marginheight="0"
             marginwidth="0"
