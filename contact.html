@@ -19,10 +19,11 @@
         justify-content: center;
         text-align: center;
         min-height: 100vh;
-        padding-top: 20vh;
+        padding-top: 10vh;
       }
 
       .logo {
+        height: 80px;
         margin-bottom: 20px;
       }
 
@@ -53,6 +54,12 @@
       .label {
         display: block;
         margin-bottom: 8px;
+      }
+
+      .google-form {
+        display: flex;
+
+        width: 100%;
       }
 
       .input {
@@ -90,30 +97,22 @@
     <div class="container">
       <img src="logo.png" alt="Drop Philippines Logo" class="logo" />
       <div class="contact-form">
-        <h1 class="contact-title">Contact Us</h1>
         <h2 class="contact-description">
           Connect with trusted laundry shops through our marketplace platform.
           Contact us for inquiries and assistance. Experience the convenience
           today!
         </h2>
-        <form action="send_email.php" method="POST">
-          <label class="label" for="name">Name:</label>
-          <input class="input" type="text" id="name" name="name" required />
-
-          <label for="email">Email:</label>
-          <input class="input" type="email" id="email" name="email" required />
-
-          <label for="message">Message:</label>
-          <textarea
-            class="input"
-            id="message"
-            name="message"
-            rows="5"
-            required
-          ></textarea>
-
-          <input type="submit" class="submit" value="Send" />
-        </form>
+        <div class="google-form">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeFCYe9xd5m-FS94eSOUPZMWPyyHp-nteLt-lWPI0te3N1Ang/viewform?embedded=true"
+            width="640"
+            height="719"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Loading…</iframe
+          >
+        </div>
       </div>
     </div>
   </body>
